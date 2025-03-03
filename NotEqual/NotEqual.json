@@ -1,0 +1,58 @@
+[
+    {
+        "op": "NotEqual",
+        "language": "cpp",
+        "input_desc": [
+            {
+                "name": "x1",
+                "param_type": "required",
+                "format": [
+                    "ND",
+                    "ND",
+                    "ND",
+                    "ND"
+                ],
+                "type": [
+                    "float",
+                    "fp16",
+                    "int32",
+                    "int8"
+                ]
+            },
+            {
+                "name": "x2",
+                "param_type": "required",
+                "format": [
+                    "ND",
+                    "ND",
+                    "ND",
+                    "ND"
+                ],
+                "type": [
+                    "float",
+                    "fp16",
+                    "int32",
+                    "int8"
+                ]
+            }
+        ],
+        "output_desc": [
+            {
+                "name": "y",
+                "param_type": "required",
+                "format": [
+                    "ND",
+                    "ND",
+                    "ND",
+                    "ND"
+                ],
+                "type": [
+                    "bool",
+                    "bool",
+                    "bool",
+                    "bool"
+                ]
+            }
+        ]
+    }
+]

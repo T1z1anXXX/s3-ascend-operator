@@ -1,0 +1,46 @@
+[
+    {
+        "op": "AsinhGrad",
+        "language": "cpp",
+        "input_desc": [
+            {
+                "name": "y",
+                "param_type": "required",
+                "format": [
+                    "ND",
+                    "ND"
+                ],
+                "type": [
+                    "float",
+                    "fp16"
+                ]
+            },
+            {
+                "name": "dy",
+                "param_type": "required",
+                "format": [
+                    "ND",
+                    "ND"
+                ],
+                "type": [
+                    "float",
+                    "fp16"
+                ]
+            }
+        ],
+        "output_desc": [
+            {
+                "name": "z",
+                "param_type": "required",
+                "format": [
+                    "ND",
+                    "ND"
+                ],
+                "type": [
+                    "float",
+                    "fp16"
+                ]
+            }
+        ]
+    }
+]

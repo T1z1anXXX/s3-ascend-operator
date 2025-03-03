@@ -1,0 +1,88 @@
+[
+    {
+        "op": "ScatterElements",
+        "language": "cpp",
+        "input_desc": [
+            {
+                "name": "var",
+                "param_type": "required",
+                "format": [
+                    "ND",
+                    "ND",
+                    "ND",
+                    "ND"
+                ],
+                "type": [
+                    "float",
+                    "fp16",
+                    "int32",
+                    "uint8"
+                ]
+            },
+            {
+                "name": "indices",
+                "param_type": "required",
+                "format": [
+                    "ND",
+                    "ND",
+                    "ND",
+                    "ND"
+                ],
+                "type": [
+                    "int32",
+                    "int32",
+                    "int32",
+                    "int32"
+                ]
+            },
+            {
+                "name": "updates",
+                "param_type": "required",
+                "format": [
+                    "ND",
+                    "ND",
+                    "ND",
+                    "ND"
+                ],
+                "type": [
+                    "float",
+                    "fp16",
+                    "int32",
+                    "uint8"
+                ]
+            }
+        ],
+        "output_desc": [
+            {
+                "name": "var",
+                "param_type": "required",
+                "format": [
+                    "ND",
+                    "ND",
+                    "ND",
+                    "ND"
+                ],
+                "type": [
+                    "float",
+                    "fp16",
+                    "int32",
+                    "uint8"
+                ]
+            }
+        ],
+        "attr": [
+            {
+                "name": "axis",
+                "param_type": "optional",
+                "type": "int",
+                "default_value": 0
+            },
+            {
+                "name": "reduce",
+                "param_type": "optional",
+                "type": "string",
+                "default_value": "None"
+            }
+        ]
+    }
+]
